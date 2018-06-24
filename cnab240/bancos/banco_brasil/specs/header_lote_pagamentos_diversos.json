@@ -1,0 +1,205 @@
+{
+  "nome": "HeaderLotePagamentosDiversos",
+  "campos": {
+    "01.1": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 1
+    },
+
+    "02.1": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num"
+    },
+
+    "03.1": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 1
+    },
+
+    "04.1": {
+      "nome": "servico_operacao",
+      "posicao_inicio": 9,
+      "posicao_fim": 9,
+      "formato": "alfa",
+      "default": "C"
+    },
+
+    "05.1": {
+      "nome": "servico_servico",
+      "posicao_inicio": 10,
+      "posicao_fim": 11,
+      "formato": "num",
+      "default": 30
+    },
+
+    "06.1": {
+      "nome": "forma_lancamento",
+      "posicao_inicio": 12,
+      "posicao_fim": 13,
+      "formato": "num",
+      "default": 3
+    },
+
+    "07.1": {
+      "nome": "servico_layout",
+      "posicao_inicio": 14,
+      "posicao_fim": 16,
+      "formato": "num",
+      "default": 42
+    },
+
+    "08.1": {
+      "nome": "vazio2",
+      "posicao_inicio": 17,
+      "posicao_fim": 17,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "09.1": {
+      "nome": "cedente_inscricao_tipo",
+      "posicao_inicio": 18,
+      "posicao_fim": 18,
+      "formato": "num",
+      "default": 2
+    },
+
+    "10.1": {
+      "nome": "cedente_inscricao_numero",
+      "posicao_inicio": 19,
+      "posicao_fim": 32,
+      "formato": "num"
+    },
+
+    "11.1": {
+      "nome": "codigo_convenio_banco",
+      "posicao_inicio": 33,
+      "posicao_fim": 52,
+      "formato": "alfa"
+    },
+
+    "12.1": {
+      "nome": "cedente_agencia",
+      "posicao_inicio": 53,
+      "posicao_fim": 57,
+      "formato": "num"
+    },
+
+    "13.1": {
+      "nome": "cedente_agencia_dv",
+      "posicao_inicio": 58,
+      "posicao_fim": 58,
+      "formato": "alfa"
+    },
+
+    "14.1": {
+      "nome": "cedente_conta",
+      "posicao_inicio": 59,
+      "posicao_fim": 70,
+      "formato": "num"
+    },
+
+    "15.1": {
+      "nome": "cedente_conta_dv",
+      "posicao_inicio": 71,
+      "posicao_fim": 71,
+      "formato": "alfa"
+    },
+
+    "16.1": {
+      "nome": "dv_agencia_conta",
+      "posicao_inicio": 72,
+      "posicao_fim": 72,
+      "formato": "alfa"
+    },
+
+    "17.1": {
+      "nome": "cedente_nome",
+      "posicao_inicio": 73,
+      "posicao_fim": 102,
+      "formato": "alfa"
+    },
+
+    "18.1": {
+      "nome": "informacao0",
+      "posicao_inicio": 103,
+      "posicao_fim": 142,
+      "formato": "alfa"
+    },
+
+    "19.1": {
+      "nome": "cedente_endereco_logradouro",
+      "posicao_inicio": 143,
+      "posicao_fim": 172,
+      "formato": "alfa"
+    },
+
+    "20.1": {
+      "nome": "cedente_endereco_numero",
+      "posicao_inicio": 173,
+      "posicao_fim": 177,
+      "formato": "num"
+    },
+
+    "21.1": {
+      "nome": "cedente_endereco_complemento",
+      "posicao_inicio": 178,
+      "posicao_fim": 192,
+      "formato": "alfa"
+    },
+
+    "22.1": {
+      "nome": "cedente_endereco_cidade",
+      "posicao_inicio": 193,
+      "posicao_fim": 212,
+      "formato": "alfa"
+    },
+
+    "23.1": {
+      "nome": "cedente_endereco_cep",
+      "posicao_inicio": 213,
+      "posicao_fim": 217,
+      "formato": "num"
+    },
+
+    "24.1": {
+      "nome": "cedente_endereco_cep_sufixo",
+      "posicao_inicio": 218,
+      "posicao_fim": 220,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "25.1": {
+      "nome": "cedente_endereco_uf",
+      "posicao_inicio": 221,
+      "posicao_fim": 222,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "25.1": {
+      "nome": "exlusivo0",
+      "posicao_inicio": 223,
+      "posicao_fim": 230,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "26.1": {
+      "nome": "codigos_ocorrencia",
+      "posicao_inicio": 231,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+  }
+}
