@@ -120,3 +120,75 @@ def get_itau_file_remessa():
     arquivo_data = arquivo_remessa.read()
     arquivo_remessa.close()
     return arquivo_data
+
+
+def get_bb_data_from_dict():
+    # bb stands for banco_brasil
+    bb_data = dict()
+    dict_arquivo = {
+        'cedente_inscricao_tipo': 2,
+        'cedente_inscricao_numero': 15594050000111,
+        'cedente_agencia': 4459,
+        'cedente_conta': 17600,
+        'cedente_agencia_conta_dv': 6,
+        'cedente_nome': "TRACY TECNOLOGIA LTDA ME",
+        'arquivo_data_de_geracao': 27062012,
+        'arquivo_hora_de_geracao': 112000,
+        'arquivo_sequencia': 900002
+    }
+
+    dict_pagamento = {
+        'codigo_convenio_banco': '9999999990014CCVVVTS',
+        'test_banco_brasil': True,
+        'cedente_agencia': 4459,
+        'cedente_conta': 17600,
+        'cedente_agencia_conta_dv': 6,
+        'cedente_endereco': 'RUA AVENIDA DO CEU',
+        'cedente_endereco_numero': 665,
+        'cedente_bairro': 'JD PARAISO',
+        'cedente_cep': 60606,
+        'cedente_cep_sufixo': '666',
+        'cedente_cidade': 'PARAISO DE DEUS',
+        'favorecido_uf': 'SP',
+        'carteira_numero': 109,
+        'nosso_numero': 99999999,
+        'nosso_numero_dv': 9,
+        'numero_documento': '9999999999',
+        'vencimento_titulo': 30072012,
+        'valor_titulo': Decimal('100.00'),
+        'especie_titulo': 8,
+        'aceite_titulo': 'A',
+        'data_emissao_titulo': 27062012,
+        'juros_mora_taxa_dia': Decimal('2.00'),
+        'valor_abatimento': Decimal('0.00'),
+        'identificacao_titulo': 'BOLETO DE TESTE',
+        'codigo_protesto': 3,
+        'prazo_protesto': 0,
+        'codigo_baixa': 0,
+        'prazo_baixa': 0,
+        'favorecido_agencia_dv': 'X',
+        'favorecido_conta_dv': 'X',
+        'favorecido_agencia_conta_dv': 'X',
+        'favorecido_inscricao_tipo': 1,
+        'favorecido_inscricao_numero': 83351622120,
+        'favorecido_nome': 'JESUS DO CEU',
+        'favorecido_endereco': 'RUA AVENIDA DO CEU',
+        'favorecido_endereco_numero': 666,
+        'favorecido_bairro': 'JD PARAISO',
+        'favorecido_cep': 60606,
+        'favorecido_cep_sufixo': '666',
+        'favorecido_cidade': 'PARAISO DE DEUS',
+        'favorecido_uf': 'SP',
+        'quantidade_moeda': Decimal('1000000000.00000'),
+        'valor': Decimal('1200.00'),
+        'valor_real': Decimal('1200.00'),
+        'abatimento': Decimal('0.00'),
+        'desconto': Decimal('0.00'),
+        'juros_mora': Decimal('0.00'),
+        'multa': Decimal('0.00'),
+    }
+
+    bb_data['arquivo'] = dict_arquivo
+    bb_data['pagamento'] = dict_pagamento
+
+    return bb_data

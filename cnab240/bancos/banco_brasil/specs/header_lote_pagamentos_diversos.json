@@ -136,7 +136,7 @@
     },
 
     "19.1": {
-      "nome": "cedente_endereco_logradouro",
+      "nome": "cedente_endereco",
       "posicao_inicio": 143,
       "posicao_fim": 172,
       "formato": "alfa"
@@ -150,28 +150,28 @@
     },
 
     "21.1": {
-      "nome": "cedente_endereco_complemento",
+      "nome": "cedente_complemento",
       "posicao_inicio": 178,
       "posicao_fim": 192,
       "formato": "alfa"
     },
 
     "22.1": {
-      "nome": "cedente_endereco_cidade",
+      "nome": "cedente_cidade",
       "posicao_inicio": 193,
       "posicao_fim": 212,
       "formato": "alfa"
     },
 
     "23.1": {
-      "nome": "cedente_endereco_cep",
+      "nome": "cedente_cep",
       "posicao_inicio": 213,
       "posicao_fim": 217,
       "formato": "num"
     },
 
     "24.1": {
-      "nome": "cedente_endereco_cep_sufixo",
+      "nome": "cedente_cep_sufixo",
       "posicao_inicio": 218,
       "posicao_fim": 220,
       "formato": "alfa",
@@ -179,7 +179,7 @@
     },
 
     "25.1": {
-      "nome": "cedente_endereco_uf",
+      "nome": "cedente_uf",
       "posicao_inicio": 221,
       "posicao_fim": 222,
       "formato": "alfa",

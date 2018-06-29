@@ -219,6 +219,27 @@ class Arquivo(object):
     def lotes(self):
         return self._lotes
 
+    def incluir_pagamentos_diversos(self, **kwargs):
+        codigo_evento = 1
+        evento = Evento(self.banco, codigo_evento)
+
+        seg_a = self.banco.registros.SegmentoA(**kwargs)
+        evento.adicionar_segmento(seg_a)
+
+        seg_b = self.banco.registros.SegmentoB(**kwargs)
+        evento.adicionar_segmento(seg_b)
+
+        lote_pagamento = self.encontrar_lote(codigo_evento)
+
+        if lote_pagamento is None:
+            header = self.banco.registros.HeaderLotePagamentosDiversos(**kwargs)
+            trailer = self.banco.registros.TrailerLotePagamentosDiversos(**kwargs)
+            lote_pagamento = Lote(self.banco, header, trailer)
+            self.adicionar_lote(lote_pagamento)
+
+        lote_pagamento.adicionar_evento(evento)
+        self.trailer.totais_quantidade_registros += len(evento)
+
     def incluir_cobranca(self, header, **kwargs):
         # 1 eh o codigo de cobranca
         codigo_evento = 1

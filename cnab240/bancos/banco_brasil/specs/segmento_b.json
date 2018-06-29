@@ -63,7 +63,7 @@
     },
 
     "09.3B": {
-      "nome": "favorecido_endereco_logradouro",
+      "nome": "favorecido_endereco",
       "posicao_inicio": 33,
       "posicao_fim": 62,
       "formato": "alfa"
@@ -77,56 +77,56 @@
     },
 
     "11.3B": {
-      "nome": "favorecido_endereco_complemento",
+      "nome": "favorecido_complemento",
       "posicao_inicio": 68,
       "posicao_fim": 82,
       "formato": "alfa"
     },
 
     "12.3B": {
-      "nome": "favorecido_endereco_bairro",
+      "nome": "favorecido_bairro",
       "posicao_inicio": 83,
       "posicao_fim": 97,
       "formato": "alfa"
     },
 
     "13.3B": {
-      "nome": "favorecido_endereco_cidade",
+      "nome": "favorecido_cidade",
       "posicao_inicio": 98,
       "posicao_fim": 117,
       "formato": "alfa"
     },
 
     "14.3B": {
-      "nome": "favorecido_endereco_cep",
+      "nome": "favorecido_cep",
       "posicao_inicio": 118,
       "posicao_fim": 122,
       "formato": "num"
     },
 
     "15.3B": {
-      "nome": "favorecido_endereco_cep_sufixo",
+      "nome": "favorecido_cep_sufixo",
       "posicao_inicio": 123,
       "posicao_fim": 125,
       "formato": "alfa"
     },
 
     "16.3B": {
-      "nome": "favorecido_endereco_uf",
+      "nome": "favorecido_uf",
       "posicao_inicio": 126,
       "posicao_fim": 127,
       "formato": "alfa"
     },
 
     "17.3B": {
-      "nome": "pagamento_vencimento",
+      "nome": "vencimento",
       "posicao_inicio": 128,
       "posicao_fim": 135,
       "formato": "num"
     },
 
     "18.3B": {
-      "nome": "pagamento_valor",
+      "nome": "valor",
       "posicao_inicio": 136,
       "posicao_fim": 150,
       "formato": "num",
@@ -134,7 +134,7 @@
     },
 
     "19.3B": {
-      "nome": "pagamento_abatimento",
+      "nome": "abatimento",
       "posicao_inicio": 151,
       "posicao_fim": 165,
       "formato": "num",
@@ -142,7 +142,7 @@
     },
 
     "20.3B": {
-      "nome": "pagamento_desconto",
+      "nome": "desconto",
       "posicao_inicio": 166,
       "posicao_fim": 180,
       "formato": "num",
@@ -150,7 +150,7 @@
     },
 
     "21.3B": {
-      "nome": "pagamento_mora",
+      "nome": "juros_mora",
       "posicao_inicio": 181,
       "posicao_fim": 195,
       "formato": "num",
@@ -158,7 +158,7 @@
     },
 
     "22.3B": {
-      "nome": "pagamento_multa",
+      "nome": "multa",
       "posicao_inicio": 196,
       "posicao_fim": 210,
       "formato": "num",

@@ -115,28 +115,28 @@
     },
 
     "16.3A": {
-      "nome": "credito_numero",
+      "nome": "numero",
       "posicao_inicio": 74,
       "posicao_fim": 93,
       "formato": "alfa"
     },
 
     "17.3A": {
-      "nome": "credito_data_pagamento",
+      "nome": "data_pagamento",
       "posicao_inicio": 94,
       "posicao_fim": 101,
       "formato": "num"
     },
 
     "18.3A": {
-      "nome": "credito_tipo_moeda",
+      "nome": "tipo_moeda",
       "posicao_inicio": 102,
       "posicao_fim": 104,
       "formato": "alfa"
     },
 
     "19.3A": {
-      "nome": "credito_quantidade_moeda",
+      "nome": "quantidade_moeda",
       "posicao_inicio": 105,
       "posicao_fim": 119,
       "formato": "num",
@@ -144,7 +144,7 @@
     },
 
     "20.3A": {
-      "nome": "credito_valor_pagamento",
+      "nome": "valor",
       "posicao_inicio": 120,
       "posicao_fim": 134,
       "formato": "num",
@@ -152,21 +152,21 @@
     },
 
     "21.3A": {
-      "nome": "credito_numero_banco",
+      "nome": "numero_banco",
       "posicao_inicio": 135,
       "posicao_fim": 154,
       "formato": "alfa"
     },
 
     "22.3A": {
-      "nome": "credito_data_real",
+      "nome": "data_real",
       "posicao_inicio": 155,
       "posicao_fim": 162,
       "formato": "num"
     },
 
     "23.3A": {
-      "nome": "credito_valor_real",
+      "nome": "valor_real",
       "posicao_inicio": 163,
       "posicao_fim": 177,
       "formato": "num",
