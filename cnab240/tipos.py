@@ -220,7 +220,7 @@ class Arquivo(object):
         return self._lotes
 
     def incluir_pagamentos_diversos(self, **kwargs):
-        codigo_evento = 1
+        codigo_evento = 30
         evento = Evento(self.banco, codigo_evento)
 
         seg_a = self.banco.registros.SegmentoA(**kwargs)

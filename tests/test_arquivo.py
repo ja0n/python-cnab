@@ -1,4 +1,3 @@
-
 import unittest
 
 import os
@@ -26,7 +25,6 @@ class TestCnab240(unittest.TestCase):
 
     @skip
     def test_unicode(self):
-        import pdb; pdb.set_trace()
         self.arquivo.incluir_cobranca(**self.itau_data['cobranca'])
         self.assertEqual(str(self.arquivo), get_itau_file_remessa())
 
@@ -41,12 +39,14 @@ class TestCnab240(unittest.TestCase):
         ret_file.seek(0)
         self.assertEqual(ret_file.read(), str(arquivo))
 
-    @skip
     def test_pagamento(self):
         arquivo = Arquivo(banco_brasil, **self.bb_data['arquivo'])
         arquivo.incluir_pagamentos_diversos(**self.bb_data['pagamento'])
-        arquivo.lotes[0].header.codigo_convenio_banco
-        print(str(arquivo))
+
+        for i in range(0, 5):
+            arquivo.incluir_pagamentos_diversos(**self.bb_data['pagamento'])
+
+        self.assertEqual(len(arquivo.lotes), 1)
 
 if __name__ == '__main__':
     unittest.main()
