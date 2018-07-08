@@ -12,7 +12,7 @@ from cnab240 import errors
 
 class CampoBase(object):
     def __init__(self):
-        self._valor = None
+        self._valor = self.default
 
     def _normalize_str(self, string):
         """
@@ -47,7 +47,9 @@ class CampoBase(object):
                 valor = valor[:-(cortar)]
 
         elif self.decimais:
-            if not isinstance(valor, Decimal):
+            try:
+                valor = Decimal(valor)
+            except:
                 print("{0} - {1}".format(self.nome, valor))
                 raise errors.TipoError(self, valor)
 
@@ -61,7 +63,9 @@ class CampoBase(object):
                 raise errors.NumDigitosExcedidoError(self, valor)
 
         else:
-            if not isinstance(valor, int):
+            try:
+                valor = int(valor)
+            except:
                 print("{0} - {1}".format(self.nome, valor))
                 raise errors.TipoError(self, valor)
             if len(str(valor)) > self.digitos:
@@ -143,6 +147,10 @@ class RegistroBase(object):
 
         new_cls = type(cls.__name__, (cls, ), attrs)
         return super(RegistroBase, cls).__new__(new_cls)
+
+    @property
+    def servico_servico(self):
+        return getattr(self, 'tipo_servico')
 
     def __init__(self, **kwargs):
         self.fromdict(kwargs)
