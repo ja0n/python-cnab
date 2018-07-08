@@ -2,7 +2,7 @@
   "nome": "HeaderLotePagamentosDiversos",
   "campos": {
     "01.1": {
-      "nome": "controle_banco",
+      "nome": "codigo_banco",
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
@@ -10,14 +10,14 @@
     },
 
     "02.1": {
-      "nome": "controle_lote",
+      "nome": "lote_numero",
       "posicao_inicio": 4,
       "posicao_fim": 7,
       "formato": "num"
     },
 
     "03.1": {
-      "nome": "controle_registro",
+      "nome": "tipo_registro",
       "posicao_inicio": 8,
       "posicao_fim": 8,
       "formato": "num",
@@ -25,15 +25,15 @@
     },
 
     "04.1": {
-      "nome": "servico_operacao",
+      "nome": "tipo_operacao",
       "posicao_inicio": 9,
       "posicao_fim": 9,
       "formato": "alfa",
-      "default": "C"
+      "default": "R"
     },
 
     "05.1": {
-      "nome": "servico_servico",
+      "nome": "tipo_servico",
       "posicao_inicio": 10,
       "posicao_fim": 11,
       "formato": "num",
@@ -49,11 +49,11 @@
     },
 
     "07.1": {
-      "nome": "servico_layout",
+      "nome": "lote_layout",
       "posicao_inicio": 14,
       "posicao_fim": 16,
       "formato": "num",
-      "default": 42
+      "default": 43
     },
 
     "08.1": {
@@ -132,50 +132,56 @@
       "nome": "informacao0",
       "posicao_inicio": 103,
       "posicao_fim": 142,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "19.1": {
       "nome": "cedente_endereco",
       "posicao_inicio": 143,
       "posicao_fim": 172,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "20.1": {
       "nome": "cedente_endereco_numero",
       "posicao_inicio": 173,
       "posicao_fim": 177,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "21.1": {
       "nome": "cedente_complemento",
       "posicao_inicio": 178,
       "posicao_fim": 192,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "22.1": {
       "nome": "cedente_cidade",
       "posicao_inicio": 193,
       "posicao_fim": 212,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "23.1": {
       "nome": "cedente_cep",
       "posicao_inicio": 213,
       "posicao_fim": 217,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "24.1": {
       "nome": "cedente_cep_sufixo",
       "posicao_inicio": 218,
       "posicao_fim": 220,
-      "formato": "alfa",
-      "default": ""
+      "formato": "num",
+      "default": 0
     },
 
     "25.1": {
@@ -186,7 +192,7 @@
       "default": ""
     },
 
-    "25.1": {
+    "26.1": {
       "nome": "exlusivo0",
       "posicao_inicio": 223,
       "posicao_fim": 230,
@@ -194,8 +200,8 @@
       "default": ""
     },
 
-    "26.1": {
-      "nome": "codigos_ocorrencia",
+    "27.1": {
+      "nome": "codigos_ocorrencias",
       "posicao_inicio": 231,
       "posicao_fim": 240,
       "formato": "alfa",

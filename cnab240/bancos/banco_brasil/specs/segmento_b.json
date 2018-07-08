@@ -2,7 +2,7 @@
   "nome": "SegmentoB",
   "campos": {
     "01.3B": {
-      "nome": "controle_banco",
+      "nome": "codigo_banco",
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
@@ -10,14 +10,14 @@
     },
 
     "02.3B": {
-      "nome": "controle_lote",
+      "nome": "numero_lote",
       "posicao_inicio": 4,
       "posicao_fim": 7,
       "formato": "num"
     },
 
     "03.3B": {
-      "nome": "controle_registro",
+      "nome": "tipo_registro",
       "posicao_inicio": 8,
       "posicao_fim": 8,
       "formato": "num",
@@ -29,7 +29,7 @@
       "posicao_inicio": 9,
       "posicao_fim": 13,
       "formato": "num",
-      "default": 1
+      "default": 2
     },
 
     "05.3B": {
@@ -66,63 +66,72 @@
       "nome": "favorecido_endereco",
       "posicao_inicio": 33,
       "posicao_fim": 62,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "10.3B": {
       "nome": "favorecido_endereco_numero",
       "posicao_inicio": 63,
       "posicao_fim": 67,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "11.3B": {
       "nome": "favorecido_complemento",
       "posicao_inicio": 68,
       "posicao_fim": 82,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "12.3B": {
       "nome": "favorecido_bairro",
       "posicao_inicio": 83,
       "posicao_fim": 97,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "13.3B": {
       "nome": "favorecido_cidade",
       "posicao_inicio": 98,
       "posicao_fim": 117,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "14.3B": {
       "nome": "favorecido_cep",
       "posicao_inicio": 118,
       "posicao_fim": 122,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "15.3B": {
       "nome": "favorecido_cep_sufixo",
       "posicao_inicio": 123,
       "posicao_fim": 125,
-      "formato": "alfa"
+      "formato": "num",
+      "default": 0
     },
 
     "16.3B": {
       "nome": "favorecido_uf",
       "posicao_inicio": 126,
       "posicao_fim": 127,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "17.3B": {
       "nome": "vencimento",
       "posicao_inicio": 128,
       "posicao_fim": 135,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "18.3B": {
@@ -130,7 +139,8 @@
       "posicao_inicio": 136,
       "posicao_fim": 150,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0.0
     },
 
     "19.3B": {
@@ -138,7 +148,8 @@
       "posicao_inicio": 151,
       "posicao_fim": 165,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0.0
     },
 
     "20.3B": {
@@ -146,7 +157,8 @@
       "posicao_inicio": 166,
       "posicao_fim": 180,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0.0
     },
 
     "21.3B": {
@@ -154,7 +166,8 @@
       "posicao_inicio": 181,
       "posicao_fim": 195,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0.0
     },
 
     "22.3B": {
@@ -162,28 +175,32 @@
       "posicao_inicio": 196,
       "posicao_fim": 210,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0.0
     },
 
     "23.3B": {
       "nome": "favorecido_documento",
       "posicao_inicio": 211,
       "posicao_fim": 225,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "24.3B": {
       "nome": "aviso",
       "posicao_inicio": 226,
       "posicao_fim": 226,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "25.3B": {
       "nome": "codigo_ug",
       "posicao_inicio": 227,
       "posicao_fim": 232,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "26.3B": {

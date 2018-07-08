@@ -2,7 +2,7 @@
   "nome": "SegmentoA",
   "campos": {
     "01.3A": {
-      "nome": "controle_banco",
+      "nome": "codigo_banco",
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
@@ -10,14 +10,14 @@
     },
 
     "02.3A": {
-      "nome": "controle_lote",
+      "nome": "numero_lote",
       "posicao_inicio": 4,
       "posicao_fim": 7,
       "formato": "num"
     },
 
     "03.3A": {
-      "nome": "controle_registro",
+      "nome": "tipo_registro",
       "posicao_inicio": 8,
       "posicao_fim": 8,
       "formato": "num",
@@ -41,22 +41,24 @@
     },
 
     "06.3A": {
-      "nome": "vazio1",
+      "nome": "tipo_movimento",
       "posicao_inicio": 15,
       "posicao_fim": 15,
-      "formato": "alfa",
-      "default": ""
+      "formato": "num",
+      "default": 0
     },
 
     "07.3A": {
       "nome": "servico_codigo_movimento",
       "posicao_inicio": 16,
       "posicao_fim": 17,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "08.3A": {
-      "nome": "favorecido_camara",
+      "nome": "codigo_camara",
+      "_doc": "700 = DOC; 018 = TED",
       "posicao_inicio": 18,
       "posicao_fim": 20,
       "formato": "num"
@@ -81,7 +83,7 @@
       "posicao_inicio": 29,
       "posicao_fim": 29,
       "formato": "alfa",
-      "default": 1
+      "default": ""
     },
 
     "12.3A": {
@@ -96,7 +98,7 @@
       "posicao_inicio": 42,
       "posicao_fim": 42,
       "formato": "alfa",
-      "default": 1
+      "default": ""
     },
 
     "14.3A": {
@@ -104,7 +106,7 @@
       "posicao_inicio": 43,
       "posicao_fim": 43,
       "formato": "alfa",
-      "default": 1
+      "default": ""
     },
 
     "15.3A": {
@@ -132,7 +134,8 @@
       "nome": "tipo_moeda",
       "posicao_inicio": 102,
       "posicao_fim": 104,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": "BRL"
     },
 
     "19.3A": {
@@ -140,7 +143,8 @@
       "posicao_inicio": 105,
       "posicao_fim": 119,
       "formato": "num",
-      "decimais": 5
+      "decimais": 5,
+      "default": 0.0
     },
 
     "20.3A": {
@@ -155,14 +159,16 @@
       "nome": "numero_banco",
       "posicao_inicio": 135,
       "posicao_fim": 154,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "22.3A": {
       "nome": "data_real",
       "posicao_inicio": 155,
       "posicao_fim": 162,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "23.3A": {
@@ -170,35 +176,40 @@
       "posicao_inicio": 163,
       "posicao_fim": 177,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0.0
     },
 
     "24.3A": {
       "nome": "informacao_2",
       "posicao_inicio": 178,
       "posicao_fim": 217,
-      "formato": "alfa"
+      "formato": "num",
+      "default": 0
     },
 
     "25.3A": {
       "nome": "codigo_finalidade_doc",
       "posicao_inicio": 218,
       "posicao_fim": 219,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "26.3A": {
       "nome": "codigo_finalidade_ted",
       "posicao_inicio": 220,
       "posicao_fim": 224,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "27.3A": {
       "nome": "codigo_finalidade_complementar",
       "posicao_inicio": 225,
       "posicao_fim": 226,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "28.3A": {
@@ -214,14 +225,15 @@
       "posicao_inicio": 228,
       "posicao_fim": 228,
       "formato": "num",
-      "default": ""
+      "default": 0
     },
 
     "29.3A": {
       "nome": "codigo_ocorrencias",
       "posicao_inicio": 231,
       "posicao_fim": 240,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     }
 
   }
